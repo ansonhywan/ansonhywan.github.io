@@ -1,0 +1,70 @@
+* {
+  font-family: "Thasadith";
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 200px auto 200px;
+  grid-template-rows: 150px 750px 150px;
+  grid-template-areas:
+    "pad pad pad"
+    "pad body pad"
+    "pad footer pad";
+}
+
+.main {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  justify-self: center;
+}
+
+.pic {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.header {
+  text-align: center;
+}
+
+.link {
+  margin: 5px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.web-list {
+  list-style: none;
+  text-align: center;
+}
+
+.social-list {
+  list-style: none;
+  display: inline-block;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+hr {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  align-self: end;
+}
+
+footer {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  justify-self: center;
+}
