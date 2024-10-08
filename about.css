@@ -1,0 +1,62 @@
+* {
+  font-family: "Raleway";
+  font-weight: 300;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 200px auto 200px;
+  grid-template-rows: 150px 750px 150px;
+  grid-template-areas:
+    "pad pad pad"
+    "pad body pad"
+    "pad footer pad";
+}
+
+.main {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  justify-self: center;
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+p {
+    text-align: justify;
+}
+
+h3 {
+    text-align: left;
+}
+
+ul {
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    justify-self: center;
+  }
+  
