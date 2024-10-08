@@ -24,6 +24,18 @@
   padding-right: 10%;
 }
 
+nav {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-self: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
 img {
   border-radius: 50%;
   width: 200px;
@@ -43,13 +55,16 @@ h3 {
     text-align: left;
 }
 
-ul {
+.main-list {
     text-align: left;
+}
+
+.company-link {
+    font-weight: bold;
 }
 
 a {
     text-decoration: none;
-    font-weight: bold;
 }
 
 footer {
