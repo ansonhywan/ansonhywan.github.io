@@ -1,5 +1,6 @@
 * {
-  font-family: "Thasadith";
+  font-family: "Raleway";
+  font-weight: 200;
 }
 
 .container {
@@ -39,6 +40,7 @@
 .web-list {
   list-style: none;
   text-align: center;
+  padding-bottom: 10px;
 }
 
 .social-list {
@@ -51,6 +53,14 @@ ul {
   padding: 0;
   padding-bottom: 20px;
   text-align: center;
+}
+
+h1 {
+  font-weight: 400
+}
+
+h3 {
+  padding-bottom: 10px;
 }
 
 hr {
