@@ -11,6 +11,7 @@
         "pad pad pad"
         "pad body pad"
         "pad footer pad";
+    overflow: scroll;
 }
 
 .main {
@@ -32,4 +33,12 @@ header {
 
 li {
     padding-bottom: 20px;
+}
+
+footer {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    justify-self: center;
 }
