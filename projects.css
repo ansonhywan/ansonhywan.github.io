@@ -1,0 +1,35 @@
+* {
+    font-family: "Raleway";
+    font-weight: 300;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 200px auto 200px;
+    grid-template-rows: 150px 750px 150px;
+    grid-template-areas:
+        "pad pad pad"
+        "pad body pad"
+        "pad footer pad";
+}
+
+.main {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+header {
+    text-align: center;
+}
+
+.main-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    padding-bottom: 20px;
+}

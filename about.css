@@ -59,6 +59,10 @@ h3 {
     text-align: left;
 }
 
+li {
+  padding-bottom: 5px;
+}
+
 .company-link {
     font-weight: bold;
 }
