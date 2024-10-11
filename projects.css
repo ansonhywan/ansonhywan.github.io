@@ -23,6 +23,11 @@ nav {
 
 nav ul {
     list-style: none;
+    display: block;
+}
+
+nav ul li:hover {
+    transform: scale(1.1);
 }
 
 .header {
@@ -39,7 +44,25 @@ nav ul {
     grid-row-start: 2;
     grid-row-end: 3;
     overflow-x: hidden;
+}
 
+@keyframes fadeInText {
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.animated {
+    animation-name: fadeInText;
+    animation-duration: .6s;
+    animation-delay: .3s;
+    animation-fill-mode: both;
 }
 
 header {
