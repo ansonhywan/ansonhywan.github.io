@@ -1,5 +1,5 @@
 * {
-  font-family: "Raleway";
+  font-family: "Source Code Pro";
   font-weight: 300;
 }
 
@@ -73,10 +73,6 @@ ul {
   padding-bottom: 20px;
   text-align: center;
   display: block;
-}
-
-h1 {
-  font-weight: 400;
 }
 
 h3 {
