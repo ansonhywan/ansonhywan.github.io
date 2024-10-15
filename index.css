@@ -3,10 +3,14 @@
   font-weight: 300;
 }
 
+body, .container {
+  min-height: 100vh;
+}
+
 .container {
   display: grid;
-  grid-template-columns: 200px auto 200px;
-  grid-template-rows: 150px 750px 150px;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: 5% auto 5%;
   grid-template-areas:
     "pad pad pad"
     "pad body pad"
@@ -19,6 +23,8 @@
   grid-row-start: 2;
   grid-row-end: 3;
   justify-self: center;
+  align-self: start;
+  padding-top: 10%;
 }
 
 @keyframes fadeInText {
@@ -101,4 +107,16 @@ a:visited {
 
 .main ul li:hover {
   transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+  .container {
+    display: grid;
+    grid-template-columns: 0% 100% 0%;
+    grid-template-rows: 5% 90% 5%;
+    grid-template-areas:
+      "pad pad pad"
+      "pad body pad"
+      "pad footer pad";
+  }
 }
