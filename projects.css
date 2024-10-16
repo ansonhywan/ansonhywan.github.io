@@ -76,6 +76,10 @@ a {
     text-decoration: none;
 }
 
+a:visited {
+    color: blue;
+}
+
 .footer-area {
     grid-area: footer;
 }
