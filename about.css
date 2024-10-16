@@ -3,7 +3,8 @@
   font-weight: 300;
 }
 
-body, .container {
+body,
+.container {
   min-height: 100vh;
 }
 
