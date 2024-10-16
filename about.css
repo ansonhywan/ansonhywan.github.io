@@ -3,11 +3,6 @@
   font-weight: 300;
 }
 
-body,
-.container {
-  min-height: 100vh;
-}
-
 .container {
   display: grid;
   grid-template-columns: 10% 80% 10%;
@@ -19,7 +14,6 @@ body,
 }
 
 .main {
-  padding-top: 10%;
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
@@ -27,6 +21,8 @@ body,
   justify-self: center;
   align-self: start;
   text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 nav {
@@ -104,12 +100,21 @@ a:visited {
   color: blue;
 }
 
-footer {
+.footer-area {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 3;
   grid-row-end: 4;
+}
+
+hr {
   justify-self: center;
+  align-self: start; 
+  width: 100%;
+}
+
+footer {
+  text-align: center;
 }
 
 @media (max-width: 600px) {
