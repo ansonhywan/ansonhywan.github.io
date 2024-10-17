@@ -60,8 +60,8 @@ img {
 
 .animated {
   animation-name: fadeInText;
-  animation-duration: .6s;
-  animation-delay: .3s;
+  animation-duration: 0.6s;
+  animation-delay: 0.3s;
   animation-fill-mode: both;
 }
 

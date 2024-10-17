@@ -1,111 +1,111 @@
 * {
-    font-family: "Source Code Pro";
-    font-weight: 300;
+  font-family: "Source Code Pro";
+  font-weight: 300;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 10% 80% 10%;
-    grid-template-rows: 5% auto 5%;
-    grid-template-areas:
-        "navbar . ."
-        ". body ."
-        ". footer .";
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: 5% auto 5%;
+  grid-template-areas:
+    "navbar . ."
+    ". body ."
+    ". footer .";
 }
 
 nav {
-    position: absolute;
-    top: 0;
+  position: absolute;
+  top: 0;
 }
 
 nav ul {
-    list-style: none;
+  list-style: none;
 }
 
 nav ul li {
-    display: inline;
+  display: inline;
 }
 
 nav ul li:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .main {
-    grid-area: body;
-    justify-self: center;
-    align-self: start;
-    text-align: center;
+  grid-area: body;
+  justify-self: center;
+  align-self: start;
+  text-align: center;
 }
 
 @keyframes fadeInText {
-    from {
-        transform: translateY(-30px);
-        opacity: 0;
-    }
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
 
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .animated {
-    animation-name: fadeInText;
-    animation-duration: 0.6s;
-    animation-delay: 0.3s;
-    animation-fill-mode: both;
+  animation-name: fadeInText;
+  animation-duration: 0.6s;
+  animation-delay: 0.3s;
+  animation-fill-mode: both;
 }
 
 header {
-    text-align: center;
+  text-align: center;
 }
 
 .main-list,
 .main-list ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .prj-body {
-    padding-bottom: 20px;
-    list-style: none;
+  padding-bottom: 20px;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 a:visited {
-    color: blue;
+  color: blue;
 }
 
 .footer-area {
-    grid-area: footer;
+  grid-area: footer;
 }
 
 hr {
-    justify-self: center;
-    align-self: start;
-    width: 100%;
+  justify-self: center;
+  align-self: start;
+  width: 100%;
 }
 
 footer {
-    text-align: center;
+  text-align: center;
 }
 
 h4 {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 @media (max-width: 600px) {
-    .container {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 5% auto 5%;
-        grid-template-areas:
-            "navbar"
-            "body"
-            "footer";
-    }
+  .container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 5% auto 5%;
+    grid-template-areas:
+      "navbar"
+      "body"
+      "footer";
+  }
 }
